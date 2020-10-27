@@ -1,4 +1,5 @@
 import pymssql
+import sqlite3
 
 _sql_server = "DESKTOP-V6FAAH1"
 _sql_database = "IF6201_Proyecto3"
@@ -30,3 +31,25 @@ def ejecutar(sp):
         print("Error en ejecutar: "+e)
     finally:
         cnx.close()
+
+def sqlite_conexion():
+    try:
+        conexion = sqlite3.connect("Aplicada")
+        return conexion
+    except IOError as e:
+        print("Error en la conexion "+e)
+
+def actualizar_sqlite(bt):
+    try:
+        conexion = sqlite_conexion()
+        cursor = conexion.cursor()
+        cursor.execute(bt)
+        data_ret = cursor.fetchall()
+
+        conexion.commit()
+
+        return data_ret
+    except IOError as e:
+        print("Error en actualizar SQLite: " + e)
+    finally:
+        conexion.close()

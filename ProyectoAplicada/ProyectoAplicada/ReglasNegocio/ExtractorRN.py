@@ -9,6 +9,7 @@ def clientes(fechai,fechaf):
             print("Clientes Vacio")
             sys.exit(0)
         else:
+            AccesoDatos.ConexionAD.actualizar_sqlite(f"INSERT INTO BITACORA VALUES (0,'clientes.csv', true, getdate(), false, null);")
             for row in data:
                 array.append(row)
         return array
@@ -23,6 +24,7 @@ def telefonos(fechai, fechaf):
             print("Telefonos Vacio")
             sys.exit(0)
         else:
+            AccesoDatos.ConexionAD.actualizar_sqlite(f"INSERT INTO BITACORA VALUES (0,'telefonos.csv', true, getdate(), false, null);")
             for row in data:
                 array.append(row)
         return array
@@ -37,6 +39,7 @@ def direcciones(fechai, fechaf):
             print("Direcciones Vacio")
             sys.exit(0)
         else:
+            AccesoDatos.ConexionAD.actualizar_sqlite(f"INSERT INTO BITACORA VALUES (0,'direcciones.csv', true, getdate(), false, null);")
             for row in data:
                 array.append(row)
         return array
@@ -51,6 +54,7 @@ def correos(fechai, fechaf):
             print("Correos Vacio")
             sys.exit(0)
         else:
+            AccesoDatos.ConexionAD.actualizar_sqlite(f"INSERT INTO BITACORA VALUES (0,'correos.csv', true, getdate(), false, null);")
             for row in data:
                 array.append(row)
         return array
@@ -65,6 +69,7 @@ def tarjetas(fechai, fechaf):
             print("Tarjetas Vacio")
             sys.exit(0)
         else:
+            AccesoDatos.ConexionAD.actualizar_sqlite(f"INSERT INTO BITACORA VALUES (0,'tarjetas.csv', true, getdate(), false, null);")
             for row in data:
                 array.append(row)
         return array
@@ -79,6 +84,7 @@ def ordenes(fechai, fechaf):
             print("Ordenes Vacio")
             sys.exit(0)
         else:
+            AccesoDatos.ConexionAD.actualizar_sqlite(f"INSERT INTO BITACORA VALUES (0,'ordenes.csv', true, getdate(), false, null);")
             for row in data:
                 array.append(row)
         return array

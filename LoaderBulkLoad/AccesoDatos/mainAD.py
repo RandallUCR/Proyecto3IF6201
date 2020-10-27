@@ -13,3 +13,25 @@ def connect_pg():
     except Exception as e:
         print("Error al conectar: " + e)
         return 0
+
+def sqlite_conexion():
+    try:
+        conexion = sqlite3.connect("C:\Aplicada.db")
+        return conexion
+    except IOError as e:
+        print("Error en la conexion "+e)
+
+def actualizar_sqlite(bt, nombre):
+    try:
+        conexion = sqlite_conexion()
+        cursor = conexion.cursor()
+        cursor.execute(bt, nombre)
+        data_ret = cursor.fetchall()
+
+        conexion.commit()
+
+        return data_ret
+    except IOError as e:
+        print("Error en actualizar SQLite: " + e)
+    finally:
+        conexion.close()

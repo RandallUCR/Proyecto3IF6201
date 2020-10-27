@@ -4,6 +4,7 @@ import AccesoDatos.mainAD as cnn
 def insert_in_table(_table_name):
     try:
         conn = cnn.connect_pg()
+        nombre = _table_name+".csv"
         if conn == 0:
             print("Error al conectar")
         else:
@@ -16,5 +17,7 @@ def insert_in_table(_table_name):
             conn.commit()
             print("Carga de datos exitosa")
             conn.close()
+            cnn.actualizar_sqlite(f"UPDATE BITACORA SET CARGADO = TRUE, FECHA_CARGADO = GETDATE() WHERE NOMBRE_CSV = ?;", nombre)
     except Exception as e:
         print("Error: "+e)
+
