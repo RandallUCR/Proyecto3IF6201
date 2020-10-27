@@ -8,8 +8,8 @@ def insert_in_table(_table_name):
             print("Error al conectar")
         else:
             cur = conn.cursor()
-            _file_name = 'D:\\' + _table_name + ".csv"
-#            _file_name = _table_name + ".csv"
+#            _file_name = 'D:\\' + _table_name + ".csv"
+            _file_name = _table_name + ".csv"
             with open(_file_name, 'r') as f:
                 next(f)
                 cur.copy_from(f, 'aplicada.'+_table_name, sep=',')
