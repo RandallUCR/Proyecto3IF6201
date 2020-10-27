@@ -1,3 +1,4 @@
+import sqlite3
 import psycopg2
 
 
@@ -17,6 +18,7 @@ def connect_pg():
 def sqlite_conexion():
     try:
         conexion = sqlite3.connect("C:\Aplicada.db")
+        #   conexion = sqlite3.connect("/home/faubricioch/Aplicada.db")
         return conexion
     except IOError as e:
         print("Error en la conexion "+e)

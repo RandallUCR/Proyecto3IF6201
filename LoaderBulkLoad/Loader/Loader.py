@@ -17,7 +17,9 @@ def insert_in_table(_table_name):
             conn.commit()
             print("Carga de datos exitosa")
             conn.close()
-            cnn.actualizar_sqlite(f"UPDATE BITACORA SET CARGADO = TRUE, FECHA_CARGADO = GETDATE() WHERE NOMBRE_CSV = ?;", nombre)
+            #hay que obtener la fecha actual para ponerle al data set
+            data_set = (True, '26/10/2020', nombre)
+            cnn.actualizar_sqlite("UPDATE BITACORA SET CARGADO = ?, FECHA_CARGADO = ? WHERE NOMBRE_CSV = ?", data_set)
     except Exception as e:
         print("Error: "+e)
 
