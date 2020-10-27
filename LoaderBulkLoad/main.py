@@ -2,7 +2,7 @@ import Loader.Loader as loader
 
 
 #cargamos los datos de los clientes
-loader.insert_in_table("clientes")
+#loader.insert_in_table("clientes")
 
 #cargamos los telefonos
 #loader.insert_in_table("telefonos")
@@ -17,4 +17,4 @@ loader.insert_in_table("clientes")
 #loader.insert_in_table("tarjetas")
 
 #cargamos los ordenes
-#loader.insert_in_table("ordenes")
+loader.insert_in_table("ordenes")
