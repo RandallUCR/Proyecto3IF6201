@@ -1,5 +1,6 @@
 import sys
 import AccesoDatos.ConexionAD
+import time
 
 def clientes(fechai,fechaf):
     array = []
@@ -7,9 +8,11 @@ def clientes(fechai,fechaf):
         data = AccesoDatos.ConexionAD.ejecutar(f"EXEC SP_CLIENTES '{fechai}','{fechaf}'")
         if len(data) <= 0:
             print("Clientes Vacio")
-            sys.exit(0)
+
         else:
-            AccesoDatos.ConexionAD.actualizar_sqlite(f"INSERT INTO BITACORA VALUES (0,'clientes.csv', true, getdate(), false, null);")
+            fecha = time.strftime("%y/%m/%d")
+            data_set = ('clientes'+fechai+'_'+fechaf+'.csv', True, fecha)
+            AccesoDatos.ConexionAD.actualizar_sqlite("INSERT INTO BITACORA (NOMBRE_CSV, EXTRAIDO, FECHA_EXTRAIDO) VALUES (?,?,?);", data_set)
             for row in data:
                 array.append(row)
         return array
@@ -22,9 +25,11 @@ def telefonos(fechai, fechaf):
         data = AccesoDatos.ConexionAD.ejecutar(f"EXEC SP_TELEFONOS '{fechai}','{fechaf}'")
         if len(data) <= 0 :
             print("Telefonos Vacio")
-            sys.exit(0)
+
         else:
-            AccesoDatos.ConexionAD.actualizar_sqlite(f"INSERT INTO BITACORA VALUES (0,'telefonos.csv', true, getdate(), false, null);")
+            fecha = time.strftime("%y/%m/%d")
+            data_set = ('telefonos'+fechai+'_'+fechaf+'.csv', True, fecha)
+            AccesoDatos.ConexionAD.actualizar_sqlite("INSERT INTO BITACORA (NOMBRE_CSV, EXTRAIDO, FECHA_EXTRAIDO) VALUES (?,?,?);", data_set)
             for row in data:
                 array.append(row)
         return array
@@ -37,9 +42,11 @@ def direcciones(fechai, fechaf):
         data = AccesoDatos.ConexionAD.ejecutar(f"EXEC SP_DIRECCIONES '{fechai}','{fechaf}'")
         if len(data) <= 0 :
             print("Direcciones Vacio")
-            sys.exit(0)
+
         else:
-            AccesoDatos.ConexionAD.actualizar_sqlite(f"INSERT INTO BITACORA VALUES (0,'direcciones.csv', true, getdate(), false, null);")
+            fecha = time.strftime("%y/%m/%d")
+            data_set = ('direcciones'+fechai+'_'+fechaf+'.csv', True, fecha)
+            AccesoDatos.ConexionAD.actualizar_sqlite("INSERT INTO BITACORA (NOMBRE_CSV, EXTRAIDO, FECHA_EXTRAIDO) VALUES (?,?,?);", data_set)
             for row in data:
                 array.append(row)
         return array
@@ -52,9 +59,11 @@ def correos(fechai, fechaf):
         data = AccesoDatos.ConexionAD.ejecutar(f"EXEC SP_CORREOS '{fechai}','{fechaf}'")
         if len(data) <= 0 :
             print("Correos Vacio")
-            sys.exit(0)
+
         else:
-            AccesoDatos.ConexionAD.actualizar_sqlite(f"INSERT INTO BITACORA VALUES (0,'correos.csv', true, getdate(), false, null);")
+            fecha = time.strftime("%y/%m/%d")
+            data_set = ('correos'+fechai+'_'+fechaf+'.csv', True, fecha)
+            AccesoDatos.ConexionAD.actualizar_sqlite("INSERT INTO BITACORA (NOMBRE_CSV, EXTRAIDO, FECHA_EXTRAIDO) VALUES (?,?,?);", data_set)
             for row in data:
                 array.append(row)
         return array
@@ -67,9 +76,11 @@ def tarjetas(fechai, fechaf):
         data = AccesoDatos.ConexionAD.ejecutar(f"EXEC SP_TARJETAS '{fechai}','{fechaf}'")
         if len(data) <= 0 :
             print("Tarjetas Vacio")
-            sys.exit(0)
+
         else:
-            AccesoDatos.ConexionAD.actualizar_sqlite(f"INSERT INTO BITACORA VALUES (0,'tarjetas.csv', true, getdate(), false, null);")
+            fecha = time.strftime("%y/%m/%d")
+            data_set = ('tarjetas'+fechai+'_'+fechaf+'.csv', True, fecha)
+            AccesoDatos.ConexionAD.actualizar_sqlite("INSERT INTO BITACORA (NOMBRE_CSV, EXTRAIDO, FECHA_EXTRAIDO) VALUES (?,?,?);", data_set)
             for row in data:
                 array.append(row)
         return array
@@ -82,9 +93,11 @@ def ordenes(fechai, fechaf):
         data = AccesoDatos.ConexionAD.ejecutar(f"EXEC SP_ORDENES '{fechai}','{fechaf}'")
         if len(data[0]) <= 0 :
             print("Ordenes Vacio")
-            sys.exit(0)
+
         else:
-            AccesoDatos.ConexionAD.actualizar_sqlite(f"INSERT INTO BITACORA VALUES (0,'ordenes.csv', true, getdate(), false, null);")
+            fecha = time.strftime("%y/%m/%d")
+            data_set = ('ordenes'+fechai+'_'+fechaf+'.csv', True, fecha)
+            AccesoDatos.ConexionAD.actualizar_sqlite("INSERT INTO BITACORA (NOMBRE_CSV, EXTRAIDO, FECHA_EXTRAIDO) VALUES (?,?,?);", data_set)
             for row in data:
                 array.append(row)
         return array

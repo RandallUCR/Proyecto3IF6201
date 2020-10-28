@@ -20,24 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce44eae8-0753-44ae-834a-50292be921e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/Proyecto3IF6201.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejemplos CSV/Clientes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejemplos CSV/Correos.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejemplos CSV/Direcciones.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejemplos CSV/Ordenes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejemplos CSV/Tarjetas.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejemplos CSV/Telefonos.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ProyectoAplicada.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProyectoAplicada.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AccesoDatos/ConexionAD.py" beforeDir="false" afterPath="$PROJECT_DIR$/AccesoDatos/ConexionAD.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReglasNegocio/ExtractorRN.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReglasNegocio/ExtractorRN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SQL scripts/Proyecto3SQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../SQL scripts/Proyecto3SQL.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LoaderBulkLoad/.idea/LoaderBulkLoad.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LoaderBulkLoad/.idea/LoaderBulkLoad.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LoaderBulkLoad/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LoaderBulkLoad/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LoaderBulkLoad/AccesoDatos/mainAD.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../LoaderBulkLoad/AccesoDatos/mainAD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LoaderBulkLoad/Loader/Loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../LoaderBulkLoad/Loader/Loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LoaderBulkLoad/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../LoaderBulkLoad/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +32,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1jR45Tg4hQOyOlTxBwdgk8HlefA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -110,26 +97,26 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="329" key="FileChooserDialogImpl" timestamp="1603753498706">
+    <state x="739" y="329" key="FileChooserDialogImpl" timestamp="1603849386465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="329" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603753498706" />
-    <state width="1362" height="266" key="GridCell.Tab.0.bottom" timestamp="1603756262162">
+    <state x="739" y="329" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603849386465" />
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1603854825822">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603756262162" />
-    <state width="1362" height="266" key="GridCell.Tab.0.center" timestamp="1603756262162">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603854825822" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1603854825822">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603756262162" />
-    <state width="1362" height="266" key="GridCell.Tab.0.left" timestamp="1603756262162">
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603854825822" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1603854825822">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603756262162" />
-    <state width="1362" height="266" key="GridCell.Tab.0.right" timestamp="1603756262162">
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603854825822" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1603854825822">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603756262162" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603854825822" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1603753572483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
