@@ -34,16 +34,16 @@ def ejecutar(sp):
 
 def sqlite_conexion():
     try:
-        conexion = sqlite3.connect("Aplicada")
+        conexion = sqlite3.connect("D:\Main\Desktop\Aplicada.db")
         return conexion
     except IOError as e:
         print("Error en la conexion "+e)
 
-def actualizar_sqlite(bt):
+def actualizar_sqlite(bt,data):
     try:
         conexion = sqlite_conexion()
         cursor = conexion.cursor()
-        cursor.execute(bt)
+        cursor.execute(bt,data)
         data_ret = cursor.fetchall()
 
         conexion.commit()

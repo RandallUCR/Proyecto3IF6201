@@ -1,20 +1,9 @@
 import Loader.Loader as loader
 
 
-#cargamos los datos de los clientes
-#loader.insert_in_table("clientes")
-
-#cargamos los telefonos
-#loader.insert_in_table("telefonos")
-
-#cargamos las direcciones
-#loader.insert_in_table("direcciones")
-
-#cargamos los correos
-#loader.insert_in_table("correos")
-
-#cargamos los tarjetas
-#loader.insert_in_table("tarjetas")
-
-#cargamos los ordenes
-loader.insert_in_table("ordenes")
+loader.insert_in_table("clientes", '2017-01-01', '2020-10-31')
+loader.insert_in_table("telefonos", '2017-01-01', '2020-10-31')
+loader.insert_in_table("direcciones", '2017-01-01', '2020-10-31')
+loader.insert_in_table("correos", '2017-01-01', '2020-10-31')
+loader.insert_in_table("tarjetas", '2017-01-01', '2020-10-31')
+#loader.insert_in_table("ordenes", '2017-01-01', '2020-10-31')
